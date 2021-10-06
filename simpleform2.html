@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Page Title</title>
+</head>
+
+<body>
+    <form action="simpleform2.html" method="GET">
+        <style>
+            text-align.th {
+                text-align: left;
+            }
+
+            h1 {
+                background-color: orangered;
+                color: white;
+            }
+        </style>
+        <table>
+            <tr>
+                <th colspan=" 4">
+                    <h1>SỞ THÍCH CỦA BẠN</h1>
+                </th>
+            </tr>
+            <tr>
+                <th>Họ và tên:</th>
+                <th><input type="text" name="yourname"></th>
+            </tr>
+            <tr>
+                <th>Email:</th>
+                <th><input type="text" name="email"></th>
+            </tr>
+            <tr>
+                <th rowspan="3">Sở thích:</th>
+
+                <td><label><input name="hobby" value="sport" type="checkbox" /> Thể thao</label></td>
+                <td><label><input name="hobby" value="music" type="checkbox" /> Âm nhạc</label></td>
+                <td><label><input name="hobby" value="reading" type="checkbox" /> Đọc sách</label></td>
+            </tr>
+            <tr>
+                <td><label><input name="hobby" value="web surfing" type="checkbox" /> Lướt Web</label></td>
+                <td><label><input name="hobby" value="gaming" type="checkbox" /> Chơi game</label></td>
+                <td><label><input name="hobby" value="movies" type="checkbox" /> Điện ảnh</label></td>
+            </tr>
+            <tr>
+                <td><label><input name="hobby" value="travel" type="checkbox" /> Du lịch</label></td>
+            </tr>
+            <tr>
+                <th colspan="2"><input type="submit" value="Gửi thông tin"></th>
+                <td><input type="reset" value="Nhập lại" </td>
+            </tr>
+
+        </table>
+    </form>
+
+</body>
+
+</html>
