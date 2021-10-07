@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Page Title</title>
+</head>
+
+<body>
+    <button type="button" onclick="showMessage();">Click Me!</button>
+    <div id="messageDiv"></div>
+    <button type="button" onclick="showMessage2();">Click Me2!</button>
+    <button type="button" onclick="showMessage3();">Click Me3!</button>
+    <button type="button" onclick="showMessage4();">Click Me4!</button>
+    <script>
+        function showMessage() {
+            alert('Xin chào!');
+        }
+        function showMessage2() {
+            document.getElementById('messageDiv').innerHTML = 'Xin chào2!';
+        }
+        function showMessage3() {
+            document.write('Xin chào3!');
+        }
+        function showMessage4() {
+            console.log('Xin chào4!');
+        }
+    </script>
+
+</body>
+
+</html>
