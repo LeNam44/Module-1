@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Page Title</title>
+</head>
+
+<body>
+
+    <script>
+        let work = "Bai 1";
+        let i = 10;
+        let f = 20.5;
+        let b = true;
+        let s = 'Hà Nội';
+        document.write(work);
+        document.write('<br/>');
+        document.write('i = ' + i);
+        document.write('<br/>');
+        document.write('f = ' + f);
+        document.write('<br/>');
+        document.write('b = ' + b);
+        document.write('<br/>');
+        document.write('s = ' + s);
+        document.write('<br/>');
+        let workTwo = "Bai 2";
+        let width = 20;
+        let height = 10;
+        let area = width * height;
+        document.write(workTwo);
+        document.write('<br/>');
+        document.write('Area = ' + area);
+        document.write('<br/>');
+        function disp_prompt() {
+            var a = prompt("Enter a number", "")
+            var b = prompt("Enter another number", "")
+            if (a % b === 0) {
+                document.write(a / b);
+            }
+        }
+    </script>
+    <form>
+        <input type="button" onclick="disp_prompt()" value="Click me">
+    </form>
+
+</body>
+
+</html>
