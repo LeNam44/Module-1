@@ -1,45 +1,50 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <title>Convert Money</title>
-    <script src="convertmoney.js"></script>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 
 <body>
-    <form>
-        <table style="text-align: center;width: 40%;">
-            <tr>
-                <th>Amount</th>
-                <th>From Currency</th>
-                <th>To Currency</th>
-            </tr>
-            <tr>
-                <td>
-                    <input type="number" id="from_amount"></input>
-                </td>
-                <td>
-                    <select name="from_currency" id="from">
-                        <option value="VN">VND</option>
-                        <option value="US">USD</option>
-                        <option value="JP">JPY</option>
+    <table style="text-align: center">
+        <tr>
+            <td>Amount</td>
+            <td>Form Currency</td>
+            <td>To Currency</td>
+            <td>Result</td>
+        </tr>
+        <tr>
+            <td><label for="input"><input type="text" id="input"></label></td>
+            <td>
+                <label for="fromCurrency">
+                    <select id="fromCurrency">
+                        <option value="1">USD</option>
+                        <option value="23000">Việt Nam Đồng</option>
                     </select>
-                </td>
-                <td>
-                    <select name="to_currency" id="to">
-                        <option value="VN">VND</option>
-                        <option value="US">USD</option>
-                        <option value="JP">JPY</option>
+                </label>
+            </td>
+            <td>
+                <label for="toCurrency">
+                    <select id="toCurrency">
+                        <option value="23000">Việt Nam Đồng</option>
+                        <option value="1">USD</option>
                     </select>
-                </td>
-                <td>
-                    <button type="button" style=" color: white; background-color: purple;">Convert</button>
-                </td>
-            </tr>
-        </table>
-        <p id="result" style="color:blue;"> </p>
-    </form>
-
-
+                </label>
+            </td>
+            <td><button style="color: white; background-color: violet;" onclick="convertMoney()">Convert</button></td>
+        </tr>
+    </table>
+    <h2 style="color: blue;" id="result">
+        </h1>
+        <script>
+            function convertMoney() {
+                let input = parseInt(document.getElementById("input").value)
+                let fromCurrency = parseInt(document.getElementById("fromCurrency").value)
+                let toCurrency = parseInt(document.getElementById("toCurrency").value)
+                document.getElementById("result").innerHTML = input / fromCurrency * toCurrency
+            }
+        </script>
 </body>
 
 </html>
