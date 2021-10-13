@@ -9,10 +9,10 @@
     <script>
         let multiTable;
         multiTable = "<table border='1' width='1000' cellspacing='1' cellpadding='4'>"
-        for (i = 1; i <= 9; i++) {
+        for (i = 1; i <= 10; i++) {
             multiTable = multiTable + "<tr>";
             for (j = 2; j <= 9; j++) {
-                multiTable = multiTable + "<td>" + i + "x" + j + "=" + i * j + "</td>";
+                multiTable = multiTable + "<td>" + j + "x" + i + "=" + i * j + "</td>";
             }
             multiTable = multiTable + "</tr>";
         }
