@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -15,7 +15,7 @@
             position: absolute;
             left: 300px;
             top: 320px;
-            width: 50px;
+            width: 55px;
         }
 
         div #not {
@@ -29,8 +29,8 @@
 <body>
     <div id="tong">
         <h1>Do you love me?</h1>
-        <input type="button" name="yes" value="yes" onclick="yesClick">
-        <input type="button" name="not" value="no" onmouseover="noClick">
+        <input type="button" name="yes" value="Yes" onclick="yesClick()" />
+        <input type="button" name="no" value="No" id="not" onmouseover="noClick()" />
     </div>
     <script>
         function yesClick() {
