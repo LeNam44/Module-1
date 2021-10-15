@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Page Title</title>
+</head>
+<body>
+<!--Bai 3-->
+<!--    <input type="text" id="number1">-->
+<!--    <input type="text" id="number2">-->
+<!--    <input type="button" value="Nhan" onclick="calculate()">-->
+<!--    <h1 id="result"></h1>-->
+
+<!--Bai 4-->
+<h2>Cau a</h2>
+<input type="text" id="sidea">
+<input type="button" value="Tinh" onclick="calculate()">
+<p id="result1">Chu vi hinh vuong la </p>
+<p id="result2">Dien tich hinh vuong la</p>
+<h2>Cau b</h2>
+<input type="text" id="valuea">
+<input type="text" id="valueb">
+<input type="button" value="Tinh" onclick="calculate2()">
+<p id="result3">a^2</p>
+<p id="result4">a^b</p>
+<h2>Cau c</h2>
+<input type="text" id="valuea2">
+<input type="text" id="valueb2">
+<input type="button" value="Tinh" onclick="calculate3()">
+<p id="result5">Tong tu a den b</p>
+<h2>Cau d</h2>
+<input type="text" id="year">
+<input type="button" value="Convert" onclick="convertCen()">
+<p id="result6">Nhap so nam can chuyen doi sang the ky</p>
+<h2>Cau f</h2>
+<input type="text" id="sidea2">
+<input type="text" id="sideb2">
+<input type="text" id="sidec2">
+<input type="button" onclick="checkTriangle()">
+<p id="result7"></p>
+
+</body>
+<script>
+    //          Bai 1
+    // alert("Le Minh Nam");
+
+    //          Bai 2
+    // let a = +prompt("Nhap so")
+
+    // alert(a*a);
+
+    //          Bai 3
+    // function calculate() {
+    //     let number1 = parseInt(document.getElementById("number1").value)
+    //     let number2 = parseInt(document.getElementById("number2").value)
+    //     document.getElementById("result").innerHTML = number1 * number2
+    // }
+
+    //          Bai 4
+    //Cau a
+    function calculate() {
+        let sideA = parseInt(document.getElementById("sidea").value);
+        document.getElementById("result1").innerHTML = sideA * 4;
+        document.getElementById("result2").innerHTML = sideA * sideA;
+    }
+    //Cau b
+    function calculate2() {
+        let valueA = parseInt(document.getElementById("valuea").value);
+        let valueB = parseInt(document.getElementById("valueb").value);
+        document.getElementById("result3").innerHTML = Math.pow(valueA, 2);
+        document.getElementById("result4").innerHTML = Math.pow(valueA, valueB);
+    }
+    //Cau c
+    function calculate3() {
+        let valueA2 = parseInt(document.getElementById("valuea2").value)
+        let valueB2 = parseInt(document.getElementById("valueb2").value)
+        let total = 0;
+        if (valueA2 > valueB2) {
+            for (let i = valueB2; i <= valueA2; i++) {
+                    total += i
+            }
+        } else if (valueA2 < valueB2) {
+            for (let i = valueA2; i <= valueB2; i++) {
+                total += i
+            }
+        }
+        document.getElementById("result5").innerHTML = total
+    }
+    //Cau d
+    function convertCen() {
+        let years = parseInt(document.getElementById("year").value)
+        let century;
+        while (years > 0) {
+            century = years * 0.01;
+            break;
+        }
+        document.getElementById("result6").innerHTML = century
+    }
+    //Cau f
+    function checkTriangle() {
+        let sideA2 = parseInt(document.getElementById("sidea2").value)
+        let sideB2 = parseInt(document.getElementById("sideb2").value)
+        let sideC2 = parseInt(document.getElementById("sidec2").value)
+        if (sideA2 + sideB2 > sideC2 || sideA2 + sideC2 > sideB2 || sideC2 + sideB2 > sideA2) {
+            document.getElementById("result7").innerText = "a b c la canh cua tam giac"
+        } else if (sideA2 == sideB2 || sideC2 == sideA2 || sideC2 == sideB2) {
+            document.getElementById("result7").innerText = "a b c la canh cua tam giac can"
+        } else if (sideA2 == sideB2 == sideC2) {
+            document.getElementById("result6").innerText = "a b c la canh cua tam giac deu"
+        }
+    }
+</script>
+</html>
