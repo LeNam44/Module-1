@@ -85,14 +85,13 @@
 // }
 
 //-----------Bai 7-------------
-//Phí thuê bao bắt buộc là 25 nghìn.
-//600 đồng cho mỗi phút gọi của 50 phút đầu tiên
-//400 đồng cho mỗi phút gọi trong 150 phút tiếp theo
-//200 đồng cho mỗi phút gọi sau 200 phút đầu tiên
+// Phí thuê bao bắt buộc là 25 nghìn.
+// 600 đồng cho mỗi phút gọi của 50 phút đầu tiên
+// 400 đồng cho mỗi phút gọi trong 150 phút tiếp theo
+// 200 đồng cho mỗi phút gọi sau 200 phút đầu tiên
 
 // let soPhut = parseInt(prompt("Nhap so phut goi dien thoai da su dung"));
 // let cuocPhi = 0;
-// let tongPhi = 0;
 // let phiCoDinh = 25000;
 // if (soPhut > 200) {
 //     cuocPhi = (soPhut - 200) * 200 + (150 * 400) + (50 * 600);
@@ -101,5 +100,5 @@
 // } else {
 //     cuocPhi = soPhut * 600;
 // }
-// tongPhi = cuocPhi + phiCoDinh;
+// let tongPhi = cuocPhi + phiCoDinh;
 // alert("Ban da goi " + soPhut + " phut. Cuoc phi dien thoai cua ban la " + tongPhi + " VND");
