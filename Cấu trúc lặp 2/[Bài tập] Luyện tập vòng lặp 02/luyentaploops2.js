@@ -70,5 +70,16 @@
 // }
 // alert("So tien sau khi gui la " + moneyAfter + " trong " + month + " thang co lai suat la " + (moneyAfter - tienLai))
 
-//Bai 6
+//Bai 4
+// for (let i = 1 ; i <= 7 ; i++){
+//     for(let j = 1; j <= 21 ; j++){
+//         if( j === 21 || i == 1 || j == 1 || i == 7){
+//             document.write(" * ");
+//         }else {
+//             document.write(" &nbsp&nbsp ");
+//         }
+//     }
+//     document.write("<br>")
+// }
+
 
