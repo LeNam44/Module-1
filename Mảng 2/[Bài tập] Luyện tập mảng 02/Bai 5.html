@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bai 5</title>
+</head>
+<body>
+    <script>
+        let a = prompt("Nhap chuoi a")
+        let b = prompt("Nhap chuoi b")
+        document.write("Chuoi a la " + a + "<br>")
+        document.write("Chuoi b la " + b + "<br>")
+        let charA = a.split();
+        let charB = b.split();
+        let lengthString;
+        let count = 0
+        if (charA.length > charB.length) {
+            lengthString = charA.length
+        } else if (charB.length > charA.length) {
+            lengthString = charB.length
+        } else {
+            lengthString = charA.length;
+        }
+        for (let i = 0; i < lengthString; i++) {
+            if (charA[i] === charB[i]) {
+                count += 1;
+            }
+        }
+        if (count === lengthString) {
+            document.write("Chuoi a giong chuoi b")
+        } else {
+            document.write("Chuoi a khac chuoi b")
+        }
+    </script>
+
+</body>
+</html>

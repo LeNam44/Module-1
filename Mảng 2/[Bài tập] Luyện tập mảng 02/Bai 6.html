@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bai 6</title>
+</head>
+<body>
+    <script>
+        let a = new Array(5);
+        for (let i = 0; i < a.length; i++) {
+            a[i] = prompt("Nhap mot ky tu, phai co it nhat mot ky tu - (vi du: $,%,-,^)");
+        }
+        document.write("Cac ky tu trong chuoi a la " + a + "<br>")
+        for (let i in a) {
+            if (a[i] === "-") {
+                a[i] = "_";
+            }
+        }
+        document.write("Chuoi a sau khi doi ky tu la " + a);
+    </script>
+
+</body>
+</html>

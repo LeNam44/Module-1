@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bai 3</title>
+</head>
+<body>
+    <script>
+        let a = ['a','b','c',1,2,3]
+        document.write("Mang a bao gom " + "[" + a + "]" + "<br>");
+        let count = 0
+        for (let i = 0; i < a.length; i++) {
+            if (typeof a[i] === 'number') {
+                count += 1;
+            }
+        }
+        document.write("So ky tu so co trong mang la " + count + " ky tu")
+    </script>
+
+</body>
+</html>
