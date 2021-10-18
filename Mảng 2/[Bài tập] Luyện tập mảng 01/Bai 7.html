@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bai 6</title>
+</head>
+<body>
+<script>
+    let intArray = [1,2,3,4,5,6,7,8,9,10]
+    document.write(intArray + "<br>");
+    let v = +prompt("Nhap so V");
+    if (intArray.includes(v)) {
+        let index = intArray.indexOf(v)
+        intArray.splice(index, 1);
+    }
+    document.write(intArray);
+</script>
+</body>
+</html>

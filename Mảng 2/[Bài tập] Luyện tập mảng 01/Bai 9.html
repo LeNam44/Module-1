@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bai 1</title>
+</head>
+<body>
+<script>
+    let intArrayA = new Array(10);
+    let intArrayB = new Array(10);
+    for (let i = 0; i < intArrayA.length; i++) {
+        intArrayA[i] = Math.floor(Math.random()*20);
+    }
+    console.log(intArrayA)
+    for (let i = 0; i < intArrayB.length; i++) {
+        intArrayB[i] = Math.floor(Math.random()*20);
+    }
+    console.log(intArrayB)
+    let intArrayC = intArrayA.concat(intArrayB);
+    console.log(intArrayC)
+</script>
+</body>
+</html>
