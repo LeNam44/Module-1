@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Tu Dien So</title>
+</head>
+<body>
+    <label><input type="text" id="lang"></label> <input type="button" value="Translate" onclick="trans()">
+    <br>
+    <p id="result"></p>
+
+</body>
+<script>
+    let english = ["one", "two", "three", "four", "five", "six", "seven"];
+    let vietnamese = ['mot', 'hai', 'ba', 'bon', 'nam', 'sau', 'bay'];
+    function trans() {
+        let inputLang = document.getElementById("lang").value;
+        for (let x = 0; x < english.length; x++) {
+            if (english[x] == inputLang) {
+                document.getElementById("result").innerHTML = vietnamese[x];
+                break;
+            } else if (vietnamese[x] == inputLang) {
+                document.getElementById("result").innerHTML = english[x];
+                break;
+            } else {
+                document.getElementById("result").innerText = "Khong tim thay"
+            }
+        }
+    }
+</script>
+</html>
