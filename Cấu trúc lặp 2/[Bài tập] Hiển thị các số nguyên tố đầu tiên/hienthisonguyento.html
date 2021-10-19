@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Page Title</title>
+</head>
+
+<body>
+    <script>
+        function isPrime(n) {
+            if (n === 1 || n === 0) {
+                return false;
+            }
+            else if (n === 2) {
+                return true;
+            } else {
+                for (let x = 2; x < n; x++) {
+                    if (n % x === 0) {
+                        return false;
+                    }
+                }
+                return true;
+            }
+        }
+        let numbers = +prompt("Ban muon hien thi bao nhieu so nguyen to")
+        let count = 0;
+        let n = 2;
+        while (count < numbers) {
+            if (isPrime(n)) {
+                document.write(n + "<br>")
+                count++;
+            }
+            n++;
+        }
+    </script>
+
+
+</body>
+
+</html>
