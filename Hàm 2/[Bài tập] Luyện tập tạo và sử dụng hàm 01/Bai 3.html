@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 3</title>
+</head>
+<body>
+    <input type="text" id="inputa">
+    <input type="text" id="inputb">
+    <input type="button" value="Execute" onclick="twoPara()">
+    <script>
+        function twoPara(a,b) {
+            a = +document.getElementById("inputa").value;
+            b = +document.getElementById("inputb").value;
+            if (a > b) {
+                alert(a + " lon hon " + b)
+            } else if (a <= b) {
+                alert(a + b);
+            }
+        }
+    </script>
+</body>
+</html>

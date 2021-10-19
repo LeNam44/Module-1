@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 2</title>
+</head>
+<body>
+    <input type="text" id="input">
+    <input type="button" value="Cong mot" onclick="addOne()">
+    <p id="result"></p>
+    <script>
+        function addOne() {
+            let inputNumber = +document.getElementById("input").value;
+            let ketQua = inputNumber + 1;
+            document.getElementById("result").innerHTML = "Ket qua la " + ketQua
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 5</title>
+</head>
+<body>
+    <script>
+        let stars = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe', 'Regulus']
+        let constellation = ['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major', 'Leo']
+        let inputStars = prompt("Nhap mot ten ngoi sao: Polaris, Aldebaran, Deneb, Vega, Altair, Dubhe và Regulus")
+        function findConstel() {
+            if (stars.includes(inputStars)) {
+                let x = stars.indexOf(inputStars)
+                alert(constellation[x]);
+            } else {
+                alert("Khong tim thay ngoi sao")
+            }
+        }
+        findConstel()
+    </script>
+</body>
+</html>
