@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 9</title>
+</head>
+<body>
+    <script>
+        function countChar() {
+            let count = 0;
+            let newArray = ['a', 'a', 'b', 'c', 'a',5,6,2,1,'a']
+            document.write("Mang bao gom " + newArray + "<br>")
+            if (!newArray.includes('a')) {
+                count = -1
+            }
+            for (let i in newArray) {
+                if (newArray[i] === 'a') {
+                    count += 1
+                }
+            }
+            return document.write("So lan xuat hien cua a la " + count + " lan")
+        }
+        countChar()
+    </script>
+</body>
+</html>

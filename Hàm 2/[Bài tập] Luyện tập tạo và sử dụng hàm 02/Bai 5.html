@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 5</title>
+</head>
+<body>
+    <script>
+        let a = +prompt("Nhap a")
+        let b = +prompt("Nhap b")
+        let c = +prompt("Nhap c")
+        function findMin() {
+            if (a < b && a < c) {
+                alert(a + " la so nho nhat")
+            } else if (b < a && b < c) {
+                alert(b + " la so nho nhat")
+            } else if (c < a && c < b) {
+                alert(c + " la so nho nhat")
+            } else {
+                alert("Khong tim dc so nho nhat")
+            }
+        }
+        findMin()
+    </script>
+</body>
+</html>

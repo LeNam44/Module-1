@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 2</title>
+</head>
+<body>
+    <script>
+        let r = +prompt("Nhap ban kinh hinh tron")
+        function tinhChuVi() {
+            if (r > 0) {
+                let chuVi = 2 * r * 3.14;
+                alert("Chu vi la " + Math.floor(chuVi));
+            } else {
+                alert("Hay nhap so lon hon 0")
+            }
+        }
+        function tinhDienTich() {
+            if (r > 0) {
+                let dienTich = r * r * 3.14;
+                alert("Dien tich la " + dienTich)
+            } else {
+                alert("Hay nhap so lon 0")
+            }
+        }
+        tinhChuVi()
+        tinhDienTich()
+    </script>
+</body>
+</html>

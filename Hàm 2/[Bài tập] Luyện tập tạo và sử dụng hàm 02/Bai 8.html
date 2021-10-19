@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 8</title>
+</head>
+<body>
+    <script>
+        function reverseArray() {
+            let intArray = new Array(10);
+            for (let i = 0; i < intArray.length; i++) {
+                intArray[i] = Math.floor(Math.random()*20)
+            }
+            document.write("Mang so nguyen luc dau la " + intArray + "<br>")
+            intArray.reverse();
+            document.write("Mang so nguyen dao nguoc la " + intArray)
+        }
+        reverseArray()
+    </script>
+</body>
+</html>

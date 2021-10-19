@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 3</title>
+</head>
+<body>
+    <script>
+        let inputNumber = +prompt("Nhap mot so de tinh giai thua");
+        function tinhGiaiThua() {
+            let factorial = 1
+            for (let i = inputNumber; i > 0; i--) {
+                factorial = factorial * i;
+            }
+            alert("Giai thua cua " + inputNumber + " la " + factorial)
+        }
+        tinhGiaiThua()
+    </script>
+</body>
+</html>
