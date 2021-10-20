@@ -1,9 +1,37 @@
-function myFunction() {
-let myNum = 10;
-function showNum() {
-alert(myNum);
-}
-return showNum();
-}
-let callFunc = myFunction();
-myFunction();
+
+<html lang="en">
+<head>
+    <title>Faking Textarea on Typing</title>
+    <meta charset=utf-8">
+    <script>
+        let a = " BE CAREFUL!. I'M WATCHING YOU!"
+        let arrayA = a.split('');
+        let n = ""
+        console.log(arrayA)
+        function typeTextarea() {
+            t = document.f.txt.value;
+            j = t.length;
+            if (j > 0) {
+                for(let i = 1; i <= j; i++) {
+                    n = n + a[i];
+                    if(i === 31) {
+                        document.f.txt.value = "";
+                        n = "";
+                    }
+                }
+            }
+            document.f.txt.value = n;
+            n="";
+            setTimeout("typeTextarea()", 1);
+        }
+    </script>
+</head>
+<body>
+<center>
+    <h1>Type anthing slowly</h1>
+    <form name="f">
+        <textarea name="txt" cols="40" rows="10" onkeydown="typeTextarea();"></textarea>
+    </form>
+</center>
+</body>
+</html>
