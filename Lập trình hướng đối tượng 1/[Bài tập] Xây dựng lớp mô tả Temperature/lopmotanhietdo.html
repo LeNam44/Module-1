@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+  class Temperature {
+      doC;
+
+      constructor(doC) {
+          if (doC >= -273) {
+              this._doC = doC;
+          }
+      }
+
+      get doC() {
+          return this._doC;
+      }
+
+      set doC(value) {
+          this._doC = value;
+      }
+
+      convertToF() {
+          return this._doC * (9/5) + 32
+      }
+      get doF() {
+          return this.convertToF()
+      }
+
+      convertToK() {
+          return this._doC + 273.15
+      }
+      get doK() {
+          return this.convertToK()
+      }
+  }
+
+  let temp1 = new Temperature(25)
+  console.log(temp1.doF);
+  console.log(temp1.doK);
+</script>
+</body>
+</html>
