@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiem tra tu doi xung</title>
+</head>
+<body>
+<script>
+    function isPalindrome(string) {
+        let leng = Math.floor(string.length / 2);
+        for (let i = 0; i < leng; i++)
+            if (string[i] !== string[string.length - i - 1])
+                return false;
+        return true;
+    }
+    console.log(isPalindrome("redder"));
+
+</script>
+</body>
+</html>
