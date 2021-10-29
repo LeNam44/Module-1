@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        function find3rdScore(arr) {
+            if (arr.length < 3)
+            {
+                document.write(" Khong co gia tri lon thu 3 ");
+                return;
+            }
+
+            let firstMax = arr[0];
+            for (let i = 1; i < arr.length; i++)
+                if (arr[i] > firstMax)
+                    firstMax = arr[i];
+
+            let secondMax = arr[0];
+            for (let i = 0; i < arr.length; i++)
+                if (arr[i] > secondMax && arr[i] < firstMax)
+                    secondMax = arr[i];
+
+            let thirdMax = arr[0];
+            for (let i = 0; i < arr.length; i++)
+                if (arr[i] > thirdMax && arr[i] < secondMax )
+                    thirdMax = arr[i];
+
+            document.write("Gia tri lon thu 3 la " + thirdMax);
+        }
+
+    </script>
+</body>
+</html>
